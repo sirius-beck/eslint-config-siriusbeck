@@ -1,6 +1,6 @@
 {
   "author": "Sirius Beck",
-  "name": "@deathlotus/eslint-config",
+  "name": "@siriusbeck/eslint-config",
   "version": "1.0.0",
   "description": "ESLint config used by Sirius Beck, including: typescript, react, jest, prettier, etc.",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "sirius-beck/eslint-config"
+    "url": "sirius-beck/eslint-config-siriusbeck"
   },
   "bugs": {
     "url": "https://github.com/sirius-beck/eslint-config/issues"
@@ -50,7 +50,6 @@
     "deploy": "pnpm publish --access public"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^14.1.0",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "eslint-config-prettier": "^9.1.0",
