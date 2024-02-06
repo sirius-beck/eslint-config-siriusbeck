@@ -11,7 +11,6 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
   rules: {
-    '@typescript-eslint/no-unused-': 'warn',
     '@typescript-eslint/no-unused-expressions': 'warn',
     '@typescript-eslint/no-unused-import': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
