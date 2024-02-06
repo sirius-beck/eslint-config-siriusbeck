@@ -1,7 +1,7 @@
 {
   "author": "Sirius Beck",
   "name": "@siriusbeck/eslint-config",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "ESLint config used by Sirius Beck, including: typescript, react, jest, prettier, etc.",
   "license": "MIT",
   "main": "index.js",
@@ -47,6 +47,7 @@
     "./*.js"
   ],
   "dependencies": {
+    "@next/eslint-plugin-next": "^14.1.0",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "eslint-config-prettier": "^9.1.0",

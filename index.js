@@ -3,14 +3,15 @@ module.exports = {
     es2021: true,
     jest: true
   },
-  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
+  plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers', 'prettier'],
   rules: {
+    'space-before-function-paren': 'off',
     '@typescript-eslint/no-unused-expressions': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
     'import-helpers/order-imports': [
@@ -29,18 +30,7 @@ module.exports = {
     ],
     'prettier/prettier': [
       'error',
-      {
-        arrowParens: 'always',
-        bracketSpacing: true,
-        endOfLine: 'lf',
-        jsxSingleQuote: true,
-        printWidth: 100,
-        semi: false,
-        singleQuote: true,
-        tabWidth: 2,
-        trailingComma: 'none',
-        useTabs: false
-      }
+      require('./prettier')
     ]
   },
   settings: {

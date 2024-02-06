@@ -6,7 +6,7 @@ module.exports = {
     node: true,
     ...reactConfig.env
   },
-  extends: [...reactConfig.extends, 'next/core-web-vitals'],
+  extends: [...reactConfig.extends, 'plugin:@next/next/core-web-vitals'],
   rules: {
     ...reactConfig.rules
   }
