@@ -47,7 +47,7 @@ module.exports = {
   },
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts']
+      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts']
     }
   },
   ignorePatterns: ['node_modules']

@@ -1,7 +1,7 @@
 {
   "author": "Sirius Beck",
   "name": "@siriusbeck/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint config used by Sirius Beck, including: typescript, react, jest, prettier, etc.",
   "license": "MIT",
   "main": "index.js",
