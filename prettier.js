@@ -1,12 +1,21 @@
+/** @type {import('prettier').Config} */
 module.exports = {
   arrowParens: 'always',
   bracketSpacing: true,
   endOfLine: 'lf',
   jsxSingleQuote: true,
-  printWidth: 100,
+  printWidth: 80,
   semi: false,
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'none',
-  useTabs: false
+  useTabs: false,
+  overrides: [
+    {
+      files: ['**/*.tsx', '**/*.jsx'],
+      options: {
+        printWidth: 100
+      }
+    }
+  ]
 }

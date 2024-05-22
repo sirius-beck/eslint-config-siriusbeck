@@ -1,15 +1,16 @@
 module.exports = {
   env: {
     es2021: true,
-    jest: true
+    jest: true,
+    node: true
   },
-  extends: ['standard', 'plugin:@typescript-eslint/recommended'],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers', 'prettier'],
+  plugins: ['@typescript-eslint', 'eslint-plugin-import-helpers'],
   rules: {
     'space-before-function-paren': 'off',
     '@typescript-eslint/no-unused-expressions': 'warn',
@@ -27,10 +28,6 @@ module.exports = {
         ],
         alphabetize: { order: 'asc', ignoreCase: true }
       }
-    ],
-    'prettier/prettier': [
-      'error',
-      require('./prettier')
     ]
   },
   settings: {
